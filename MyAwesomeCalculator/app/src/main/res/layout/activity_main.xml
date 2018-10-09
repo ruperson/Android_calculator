@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText"
+    >
+
+    <Button
+        android:id="@+id/all_clear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="All clear"
+        android:onClick="clear"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/nine"
+        app:layout_constraintEnd_toStartOf="@+id/divide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/zero"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Clear"
+        android:onClick="clear"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/minus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/evaluate"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/right_brace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text=")"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/eight"
+        app:layout_constraintEnd_toStartOf="@+id/evaluate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/dot"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/left_brace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="("
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/seven"
+        app:layout_constraintEnd_toStartOf="@+id/zero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="-"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/evaluate"
+        app:layout_constraintTop_toBottomOf="@+id/clear"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="8"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/six"
+        app:layout_constraintEnd_toStartOf="@+id/divide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/zero"
+        app:layout_constraintTop_toBottomOf="@+id/all_clear"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="8"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/five"
+        app:layout_constraintEnd_toStartOf="@+id/evaluate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/dot"
+        app:layout_constraintTop_toBottomOf="@+id/right_brace"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="7"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/four"
+        app:layout_constraintEnd_toStartOf="@+id/zero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/left_brace"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="+"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/evaluate"
+        app:layout_constraintTop_toBottomOf="@+id/minus"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="6"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/three"
+        app:layout_constraintEnd_toStartOf="@+id/divide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/zero"
+        app:layout_constraintTop_toBottomOf="@+id/nine"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="5"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/two"
+        app:layout_constraintEnd_toStartOf="@+id/evaluate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/dot"
+        app:layout_constraintTop_toBottomOf="@+id/eight"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="4"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/one"
+        app:layout_constraintEnd_toStartOf="@+id/zero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seven"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="*"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/divide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/evaluate"
+        app:layout_constraintTop_toBottomOf="@+id/plus"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="3"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/evaluate"
+        app:layout_constraintEnd_toStartOf="@+id/divide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/zero"
+        app:layout_constraintTop_toBottomOf="@+id/six"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="1"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/dot"
+        app:layout_constraintEnd_toStartOf="@+id/zero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/four"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="2"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/zero"
+        app:layout_constraintEnd_toStartOf="@+id/evaluate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/dot"
+        app:layout_constraintTop_toBottomOf="@+id/five"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="/"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/evaluate"
+        app:layout_constraintTop_toBottomOf="@+id/multiply"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/evaluate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="="
+        android:onClick="evaluate"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/zero"
+        app:layout_constraintTop_toBottomOf="@+id/three"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/dot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="."
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/zero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintVertical_weight="1" />
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="0"
+        android:onClick="buttonClicked"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/evaluate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/dot"
+        app:layout_constraintTop_toBottomOf="@+id/two"
+        app:layout_constraintVertical_weight="1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="120dp" />
+
+    <TextView
+        android:id="@+id/currentExpression"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:gravity="end"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentResult"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:gravity="end"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentExpression" />
+
+</android.support.constraint.ConstraintLayout>
